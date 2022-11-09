@@ -1,5 +1,5 @@
 <template>
-  <Header @changeTitle="ubahText" :text="text" />
+  <Header />
 </template>
 
 <script>
@@ -10,18 +10,6 @@ export default {
   name: 'App',
   components:{
     Header,
-  },
-
-  data(){
-    return{
-      text: "ini adalah text dari data 12345",
-    };
-  },
-
-  methods:{
-    ubahText(newText){
-      this.text = newText;
-    },
   },
 };
 </script>

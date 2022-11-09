@@ -1,5 +1,8 @@
 <template>
-  <Header @changeTitle="ubahText" :text="text" />
+  <!-- tambah ':' - binding didalam props -->
+  <Header :text="text" />
+  <!-- bawah contoh props sahaja -->
+  <!-- <Header :text="data ini adalah dari view" /> -->
 </template>
 
 <script>
@@ -14,15 +17,9 @@ export default {
 
   data(){
     return{
-      text: "ini adalah text dari data 12345",
-    };
-  },
-
-  methods:{
-    ubahText(newText){
-      this.text = newText;
-    },
-  },
+      text: "ini adalah text dari data 12345"
+    }
+  }
 };
 </script>
 
